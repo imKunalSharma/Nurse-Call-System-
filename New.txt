@@ -1,0 +1,15 @@
+sudo apt-get install /home/pi/NewFolder/testing/anydesk_6.1.0-1_armhf.deb
+
+To remove cursor on start time
+
+Install the given package:
+sudo apt-get install x11-xserver-utils unclutter
+ 
+And modify this file:
+sudo nano /etc/lightdm/lightdm.conf
+
+Add this in the above file:
+xserver-command=X -nocursor
+
+
+sudo -H pip3 install pyalsaaudio
